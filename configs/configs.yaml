@@ -1,0 +1,8 @@
+model:
+  weight_path: "src/weights/best_model.pth"
+  encoder_name: "mobilenet_v2"
+  num_classes: 87
+  device: "cuda"
+
+data:
+  image_size: [640, 640]
