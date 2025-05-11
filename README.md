@@ -41,7 +41,10 @@ cd urban-scene-segmentation
 pip install -r requirements.txt
 ```
 
-Note: Python 3.10 is required. Weights are already uploaded to the GitHub repo.
+Notes: 
+   1. Python 3.10 is required.
+   2. After downloading the pretrained weights from the following link please move it to this path ```./src/weights```.
+   3. downloading link: ```https://drive.google.com/file/d/1Gejw_jkN5ByIjTexppCk_NLRdvp7Ns1L/view?usp=sharing```
 
 ## Running the API
 
@@ -75,7 +78,7 @@ docker run -p 8000:8000 -v $(pwd)/output:/app/output uss
 ## Model Trials & Experiments
 
 ### Initial Trials
-**note** iam using google colab T4 gpu for training which is a limited memory resource.
+**note** iam using google colab T4 gpu for training which is a limited resource.
 - UNet + ResNet-34: Moderate performance and high memory usage.
    - results: Epoch 10/10 — Train Loss: 1.6678, Val Loss: 1.6852 (trainig took almost 3 hours) 
 - UNet + MobileNetV2: Improved speed, reduced size and slight accuracy drop so i increased number of epochs
