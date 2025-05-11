@@ -1,0 +1,88 @@
+Pixel Value, Class
+0, background
+1, 18 wheeler
+2, ambulance
+3, bench
+4, billboard
+5, bollard
+6, box truck
+7, building commercial
+8, building residential
+9, bus
+10, bush
+11, car pickup truck
+12, car seden
+13, car sports car
+14, car suv
+15, car taxi
+16, car van
+17, cement mixture
+18, construction barrel
+19, crane
+20, crosswalk continental
+21, crosswalk solid
+22, curb
+23, dead tree
+24, delineator post
+25, dirt road
+26, do not enter sign
+27, driveway
+28, dump truck
+29, dumpster
+30, excavator
+31, fence chain link
+32, fence wood
+33, fire hydrant
+34, fire truck
+35, flatbed truck
+36, garbage truck
+37, gas station canopy
+38, gas station pump
+39, gaurd rail cable
+40, gaurd rail metal
+41, gravel road
+42, hedge
+43, jersey barrier
+44, land hills
+45, land plains
+46, lane line broken line
+47, lane line solid edge line
+48, laneline double solid
+49, large pathole
+50, mail box
+51, menehole cover
+52, motorcycle
+53, one way sign
+54, other street sign
+55, overpass
+56, parking space parallel
+57, person
+58, person in wheelchair
+59, person on bike
+60, person on motorcycle
+61, pole street light
+62, pole traffic light
+63, pole utility
+64, police car
+65, road arrow left
+66, road arrow right
+67, road arrow straight
+68, road arrow straight+left
+69, roadarrow straight+right
+70, school bus
+71, sidewalk
+72, sign post
+73, sky
+74, small pathole
+75, speed limit sign
+76, sports bike
+77, stop line
+78, stop sign
+79, traffic cone
+80, traffic light
+81, transit bus
+82, trash can city
+83, trash can residential
+84, tree
+85, tree cluster
+86, yield sign

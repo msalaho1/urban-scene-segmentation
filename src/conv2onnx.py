@@ -1,3 +1,7 @@
+"""
+this script is used to convert the PyTorch model to ONNX format and perform batch inference.
+"""
+
 import torch
 import onnxruntime as ort
 import numpy as np

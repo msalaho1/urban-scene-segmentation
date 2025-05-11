@@ -1,3 +1,7 @@
+"""
+this script is used to post-process the model output.
+"""
+
 import torch
 import numpy as np
 from typing import Any

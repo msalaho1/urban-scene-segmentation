@@ -21,7 +21,7 @@ def setup_logger(name, log_file, level=logging.INFO):
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(level)
 
-    regina_tz = pytz.timezone('America/Regina')
+    regina_tz = pytz.timezone('America/Regina') #REGINA TIMEZONE
     formatter = logging.Formatter(
         fmt='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'

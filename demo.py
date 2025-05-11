@@ -7,7 +7,7 @@ from src.main import main
 import cv2
 
 
-INPUT_IMAGE = 'data/testing/image1.jpeg'
+INPUT_IMAGE = 'data/testing/image3.png'
 CONFIG_PATH = 'configs/configs.yaml'
 visualize   = True
 

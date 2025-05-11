@@ -1,3 +1,7 @@
+"""
+a utility module for image processing and class mapping
+"""
+
 import cv2
 import numpy as np
 import pandas as pd

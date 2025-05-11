@@ -1,3 +1,7 @@
+"""
+this script quantizes the DeepLabV3 model to INT8 dynamically.
+"""
+
 import torch
 from torch.quantization import quantize_dynamic
 from src.deeplabv3 import DeepLabV3Model
