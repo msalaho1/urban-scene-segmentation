@@ -3,17 +3,19 @@
 ![Urban Scene Segmentation Cover](sample_output.jpg)
 
 ## Overview
-This project implements an end-to-end semantic segmentation pipeline for urban scenes using the DeepLabV3 model with a MobileNetV2 encoder. It includes preprocessing, inference, ONNX conversion, quantization, and a FastAPI-based REST API for serving predictions.
+This project implements an end-to-end semantic segmentation pipeline for urban scenes using the DeepLabV3 model with a MobileNetV2 encoder. It includes training, preprocessing, inference, ONNX conversion, quantization, a FastAPI-based REST API for serving predictions and a Docker file of the project.
 
 ## Project Structure
 
 - `api.py`: FastAPI application for serving the model.
 - `demo.py`: Example script to run segmentation pipeline locally.
-- `src/`: Core modules (preprocessing, model, quantization, ONNX conversion).
+- `src/`: Core modules (training notebook, preprocessing, model, post-processing, quantization, ONNX conversion).
 - `configs/`: Configuration files.
 - `data/`: Input images and test data.
-- `weights/`: Pretrained and quantized model weights.
-- `logs/`: Training and evaluation logs.
+- `src/weights/`: Pretrained and quantized model weights.
+- `logs/`: inference logs.
+- `Dockerfile`: dockerfile.
+- `output/`: saving location of the visualized output of the model (if visualized parameter was enabled).
 
 ## Why DeepLabV3?
 
