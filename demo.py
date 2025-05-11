@@ -4,6 +4,7 @@ Example of how to use the main function
 """
 
 from src.main import main
+import cv2
 
 
 INPUT_IMAGE = 'data/testing/image1.jpeg'
@@ -12,6 +13,7 @@ visualize   = True
 
 if __name__ == "__main__":
 
-    results = main(INPUT_IMAGE, CONFIG_PATH, visualize)
+    image= cv2.imread(INPUT_IMAGE)
+    results = main(image, CONFIG_PATH, visualize)
     print(f"the input image included these classes: {results}")
    

@@ -1,5 +1,5 @@
 model:
-  weight_path: "src/weights/best_model.pth"
+  weight_path: "src/weights/deeplabv3.pth"
   encoder_name: "mobilenet_v2"
   num_classes: 87
   device: "cuda"

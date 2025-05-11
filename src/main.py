@@ -2,15 +2,13 @@
 this script includes the main function that runs the inference pipeline
 """
 
-import cv2
+
 from typing import Any
 from src.inference_pipeline import USS
-from src.utils import save_img, draw_mask
+from src.utils import draw_mask
 import pdb
 
-
-
-def main(image_path: str, config_path: str, visualize: bool= False)-> Any:
+def main(image, config_path: str, visualize: bool= False)-> Any:
     """
     Main function to run the inference pipeline.
     Args:
@@ -18,11 +16,10 @@ def main(image_path: str, config_path: str, visualize: bool= False)-> Any:
         config_path (str): Path to the configuration file.
         visualize (bool): Flag to visualize the results. Default is False.
     """
-    pipline     = USS(config_path= config_path)
-    image       = cv2.imread(image_path)
+    pipline  = USS(config_path= config_path)
 
     if image is None:
-        raise ValueError(f"Image not found at {image_path}")
+        raise ValueError(f"Image not found at image_path")
 
     try:
         pre_image                = pipline.preprocess(image)
@@ -30,7 +27,7 @@ def main(image_path: str, config_path: str, visualize: bool= False)-> Any:
         pred_masks, pred_classes = pipline.postprocess(outputs)
 
         if visualize:
-            draw_mask(image, pred_masks, './output.jpg')
+            draw_mask(image, pred_masks, './output/output.jpg')
 
     except Exception as e:
         print(f"An error occurred during inference: {e}")
